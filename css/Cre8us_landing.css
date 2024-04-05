@@ -1,0 +1,122 @@
+.cre8us-landing.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+.cre8us-landing .group {
+  position: absolute;
+  top: -512px;
+  left: -1px;
+  display: flex;
+  flex-direction: column;
+  width: 2079px;
+  height: 1795px;
+}
+.cre8us-landing .decorator {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 2079px;
+  height: 1795px;
+}
+.cre8us-landing .rect {
+  position: absolute;
+  bottom: 203px;
+  left: 0px;
+  width: 1920px;
+  height: 254px;
+  background-color: #efefef;
+}
+.cre8us-landing .paragraph_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 864px auto 14px;
+  width: 783px;
+}
+.cre8us-landing .paragraph {
+  font: 600 14px/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+  color: #4f4f4f;
+  text-align: center;
+}
+.cre8us-landing .paragraph_span0 {
+  font: 600 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span1 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span2 {
+  font: 600 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span3 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span4 {
+  font: 600 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span5 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span6 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+  color: black;
+}
+.cre8us-landing .paragraph_span7 {
+  font: 600 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span8 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span9 {
+  font: 600 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span10 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span11 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+  color: black;
+}
+.cre8us-landing .paragraph_span12 {
+  font: 600 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span13 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span14 {
+  font: 600 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span15 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span16 {
+  font: 600 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span17 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span18 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+  color: black;
+}
+.cre8us-landing .paragraph_span19 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+}
+.cre8us-landing .paragraph_span20 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+  color: black;
+}
+.cre8us-landing .paragraph_span21 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+  color: #9e9e9e;
+}
+.cre8us-landing .paragraph_span22 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+  color: black;
+}
+.cre8us-landing .paragraph_span23 {
+  font: 1em/1.79 "Pretendard-Regular", Helvetica, Arial, serif;
+  color: #9e9e9e;
+}
