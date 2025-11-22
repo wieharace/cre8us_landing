@@ -3,62 +3,149 @@
 <head>
   <title>크리에잇어스</title>
   <meta name="description" content="창작자 종합 클라우드 크잇">
-<meta property="og:title" content="크리에잇어스" /> 
-<meta property="og:url" content="https://www.cre8us.co.kr/" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="og_image.png" /> 
+  <meta property="og:title" content="크리에잇어스" /> 
+  <meta property="og:url" content="https://www.cre8us.co.kr/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="og_image.png" /> 
   <meta property="og:site_name" content="크리에잇어스" /> 
-  
-<meta property="og:description" content="창작자 종합 클라우드 크잇" />
+  <meta property="og:description" content="창작자 종합 클라우드 크잇" />
   <link rel="icon" href="cre8us.ico">
   <style>
-    
-
     .center {
-      position: relative; /* 상대 위치 설정 */
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     body{
-    margin: 0px;
-    padding: 0px;
-    background-image: url("logo222.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 2387px;
+      margin: 0px;
+      padding: 0px;
+      background-image: url("logo222.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 2387px;
     }
-    footer {
-      position: absolute; /* 절대 위치 설정 */
-      bottom: 0px; /* 아래쪽 여백 조정 */
-      left: 0%; /* 가운데 정렬을 위해 왼쪽 위치 설정 */
-        width: 100%;
-        height: 220px;
+    /* 임시 로그인 박스 */
+    .login-modal {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255,255,255,0.96);
+      border-radius: 12px;
+      box-shadow: 0 4px 32px rgba(0,0,0,.13);
+      padding: 40px 36px 32px 36px;
+      min-width: 330px;
+      max-width: 94vw;
       text-align: center;
-      background-color: #EFEFEF; /* 푸터 배경색 설정 */
-      color: #505050; /* 푸터 텍스트 색상 설정 */
+      font-family: 'Pretendard-Regular';
+      z-index: 10;
+    }
+    .login-modal h2 {
+      margin-bottom: 16px;
+      font-size: 23px;
+      color: #333;
+    }
+    .login-modal input[type="text"], .login-modal input[type="password"] {
+      width: 85%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      outline: none;
+      font-family: 'Pretendard-Regular';
+    }
+    .login-modal button {
+      background: #3B82F6;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      height: 40px;
+      width: 92%;
+      font-size: 16px;
+      font-family: 'Pretendard-Regular';
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: background 0.2s;
+    }
+    .login-modal button:hover {
+      background: #2563EB;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0px;
+      left: 0%;
+      width: 100%;
+      height: 220px;
+      text-align: center;
+      background-color: #EFEFEF;
+      color: #505050;
       font-family: 'Pretendard-Regular';
       align-content: center;
       line-height: 1.7;
       font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     b {
-        color: #505050; /* 푸터 텍스트 색상 설정 */
+      color: #505050;
     }
-    
     @font-face {
-        font-family: 'Pretendard-Regular';
-        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-        font-weight: 400;
-        font-style: normal;
+      font-family: 'Pretendard-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
     }
     .dscr{
-        color: #9E9E9E
+      color: #9E9E9E
+    }
+    .footer-info{
+      margin-top: 16px;
+      font-size: 14px;
+      color: #505050;
+    }
+    .footer-info span {
+      margin: 0 13px;
+    }
+    @media (max-width: 600px) {
+      .login-modal {
+        min-width: 90vw;
+        padding: 30px 10vw 26px 10vw;
+      }
+      .footer-info span {
+        display: block;
+        margin: 2px 0;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- 중앙 살짝 아래 임시 로그인 창 -->
+  <div class="login-modal">
+    <h2>임시 로그인</h2>
+    <form>
+      <input type="text" placeholder="아이디" autocomplete="username"><br>
+      <input type="password" placeholder="비밀번호" autocomplete="current-password"><br>
+      <button type="submit">로그인</button>
+    </form>
+    <div class="dscr" style="margin-top:9px;font-size:13px;">아직 구현되지 않은 임시 로그인 창입니다.</div>
+  </div>
 
+  <footer>
+    <div class="footer-info">
+      <span><b>박주영</b></span>
+      <span>사업자번호 <b>574-86-03424</b></span>
+      <span>서울특별시 강서구 곰달래로60길 43</span>
+      <span>주식회사 크리에잇어스</span>
+      <span>TEL 010-2163-1842</span>
+    </div>
+    <div class="dscr" style="margin-top:17px;font-size:13px;">
+      Copyright ⓒ 2025 CREA8US All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
