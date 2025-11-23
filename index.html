@@ -1,151 +1,171 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>크리에잇어스</title>
   <meta name="description" content="창작자 종합 클라우드 크잇">
-  <meta property="og:title" content="크리에잇어스" /> 
+  <meta property="og:title" content="크리에잇어스" />
   <meta property="og:url" content="https://www.cre8us.co.kr/" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="og_image.png" /> 
-  <meta property="og:site_name" content="크리에잇어스" /> 
+  <meta property="og:image" content="og_image.png" />
+  <meta property="og:site_name" content="크리에잇어스" />
   <meta property="og:description" content="창작자 종합 클라우드 크잇" />
   <link rel="icon" href="cre8us.ico">
   <style>
-    .center {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    body{
-      margin: 0px;
-      padding: 0px;
-      background-image: url("logo222.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 2387px;
-    }
-    /* 임시 로그인 박스 */
-    .login-modal {
-      position: absolute;
-      left: 50%;
-      top: 55%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(255,255,255,0.96);
-      border-radius: 12px;
-      box-shadow: 0 4px 32px rgba(0,0,0,.13);
-      padding: 40px 36px 32px 36px;
-      min-width: 330px;
-      max-width: 94vw;
-      text-align: center;
-      font-family: 'Pretendard-Regular';
-      z-index: 10;
-    }
-    .login-modal h2 {
-      margin-bottom: 16px;
-      font-size: 23px;
-      color: #333;
-    }
-    .login-modal input[type="text"], .login-modal input[type="password"] {
-      width: 85%;
-      padding: 10px;
-      margin: 10px 0 20px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
-      outline: none;
-      font-family: 'Pretendard-Regular';
-    }
-    .login-modal button {
-      background: #3B82F6;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      height: 40px;
-      width: 92%;
-      font-size: 16px;
-      font-family: 'Pretendard-Regular';
-      cursor: pointer;
-      margin-bottom: 10px;
-      transition: background 0.2s;
-    }
-    .login-modal button:hover {
-      background: #2563EB;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 0px;
-      left: 0%;
-      width: 100%;
-      height: 220px;
-      text-align: center;
-      background-color: #EFEFEF;
-      color: #505050;
-      font-family: 'Pretendard-Regular';
-      align-content: center;
-      line-height: 1.7;
-      font-size: 14px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    b {
-      color: #505050;
-    }
     @font-face {
       font-family: 'Pretendard-Regular';
       src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
       font-weight: 400;
       font-style: normal;
     }
-    .dscr{
-      color: #9E9E9E
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-image: url("logo333.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: 'Pretendard-Regular';
+      overflow: hidden;
+      /* Prevent scrollbars if not needed */
     }
-    .footer-info{
-      margin-top: 16px;
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-section {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .logo-section img {
+      width: 120px;
+      height: auto;
+    }
+
+    .login-modal {
+      background-color: rgba(255, 255, 255, 0.85);
+      /* Semi-transparent white */
+      backdrop-filter: blur(10px);
+      /* Glassmorphism effect */
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      padding: 50px 40px;
+      width: 380px;
+      max-width: 90vw;
+      text-align: center;
+    }
+
+    .login-modal h2 {
+      margin: 0 0 30px 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .login-modal input[type="text"],
+    .login-modal input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
       font-size: 14px;
-      color: #505050;
+      outline: none;
+      font-family: 'Pretendard-Regular';
+      box-sizing: border-box;
+      background-color: #fff;
     }
+
+    .login-modal button {
+      background: #D32F2F;
+      /* Red color from image */
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      height: 48px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: 'Pretendard-Regular';
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      transition: background 0.2s;
+    }
+
+    .login-modal button:hover {
+      background: #B71C1C;
+    }
+
+    .contact-info {
+      font-size: 12px;
+      color: #555;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .footer-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
     .footer-info span {
-      margin: 0 13px;
-    }
-    @media (max-width: 600px) {
-      .login-modal {
-        min-width: 90vw;
-        padding: 30px 10vw 26px 10vw;
-      }
-      .footer-info span {
-        display: block;
-        margin: 2px 0;
-      }
+      display: block;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- 중앙 살짝 아래 임시 로그인 창 -->
-  <div class="login-modal">
-    <h2>임시 로그인</h2>
-    <form>
-      <input type="text" placeholder="아이디" autocomplete="username"><br>
-      <input type="password" placeholder="비밀번호" autocomplete="current-password"><br>
-      <button type="submit">로그인</button>
-    </form>
-    <div class="dscr" style="margin-top:9px;font-size:13px;">아직 구현되지 않은 임시 로그인 창입니다.</div>
+  <div class="container">
+    <div class="logo-section">
+      <img src="logo_with_text.png" alt="CRE8US Logo">
+    </div>
+
+    <div class="login-modal">
+      <h2>로그인</h2>
+      <form>
+        <input type="text" placeholder="이메일" autocomplete="username">
+        <input type="password" placeholder="비밀번호" autocomplete="current-password">
+        <button type="submit">로그인</button>
+      </form>
+      <div class="contact-info">문의 team@cre8us.co.kr</div>
+    </div>
   </div>
 
   <footer>
     <div class="footer-info">
-      <span><b>박주영</b></span>
-      <span>사업자번호 <b>574-86-03424</b></span>
-      <span>서울특별시 강서구 곰달래로60길 43</span>
-      <span>주식회사 크리에잇어스</span>
-      <span>TEL 010-2163-1842</span>
+      <span>이름 : 박주영</span>
+      <span>주소 : 서울특별시 강서구 곰달래로60길 43</span>
+      <span>사업자번호 : 574-86-03424</span>
+      <span>상호 : 주식회사 크리에잇어스</span>
+      <span>TEL : 010-2163-1842</span>
     </div>
-    <div class="dscr" style="margin-top:17px;font-size:13px;">
-      Copyright ⓒ 2025 CREA8US All rights reserved.
+    <div style="margin-top: 10px; font-size: 11px; opacity: 0.7;">
+      Copyright ⓒ 2025 CRE8US All rights reserved.
     </div>
   </footer>
+
 </body>
+
 </html>
